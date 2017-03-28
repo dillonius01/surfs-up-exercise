@@ -1,0 +1,10 @@
+#canvas {
+	border: 1px solid gray;
+	font-family: sans-serif;
+	padding: 1%;
+	width: 98%
+}
+
+.placeholder {
+	color: lightgray
+}

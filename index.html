@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+
+<div id="body">
+  <h1>Surf's Up!</h1>
+  <p id="dropdown-container">
+    <select class="dropdown">
+      <option value="adjective">adjective</option>
+      <option value="adverb">adverb</option>
+      <option value="article">article</option>
+      <option value="conjuction">conjuction</option>
+      <option value="interjection">interjection</option>
+      <option value="noun">noun</option>
+      <option value="verb">verb</option>
+    </select>
+  </p>
+  <p>
+    <button id="btn-add">+</button>
+    <button id="btn-delete">-</button>
+    <button id="btn-go">Go</button>
+    <button id="btn-stop">Stop</button>
+  </p>
+  <p id="canvas">Put your primo sentence here.</p>
+  <h2>Instructions:</h2>
+  <ul>
+    <li><strong>Resources:</strong> <a href="https://jquery.com/">jQuery</a>, <a href="https://lodash.com/">Lodash</a></li>
+    <li>The goal is to allow the user to generate a surfer sentence.</li>
+    <li>The user should be able to control the number of words in the sentence by adding and removing dropdowns. The user should be able to control the types of words in the sentence by changing the value of the dropdowns.</li>
+    <li><strong>Example:</strong> (article) (adjective) (noun) could generate "The boss surfari!" or "A bogus barrel!"</li>
+    
+    <li><strong>Your task:</strong> Wire up the four buttons. 
+      <ul>
+        <li>The "+" button should append a dropdown.</li>
+        <li>The "-" button should remove the last dropdown.</li>
+        <li>The "Go" button should generate the sentence in the provided space. Each word should be displayed in the correct order as it is loaded from the simulated API. The first word should be capitalized. The sentence should end with an exclamation point.</li>
+        <li>The "Stop" button should end sentence generation, but leave the portion of the sentence already displayed.</li>
+      </ul>
+    </li>
+    <li><strong>Bonus points:</strong>
+      <ul>
+        <li>Display a loading indicator within the sentence when a request is issued to the API and replace it with the resulting response.</li>
+        <li>Allow the user to select a word type not already present.</li>
+        <li>Allow the user to include arbitrary words in the sentence.</li>
+        <li>Allow the user to select the verb tense.</li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+</body>
+</html>
