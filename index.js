@@ -42,7 +42,7 @@ $(function() {
     },
 
     setCanvas: function(wordStr) {
-      $('#canvas').text(wordStr)
+      $('#canvas').val(wordStr)
     },
 
     clearFetchedWords: function() {
