@@ -82,7 +82,6 @@ $(function() {
     },
 
     handleStop: function() {
-      console.log('timers are ', this.apiTimeouts)
       this.apiTimeouts.forEach(timer => clearTimeout(timer));
       this.apiTimeouts = [];
     },
